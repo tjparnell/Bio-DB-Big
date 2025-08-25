@@ -40,8 +40,8 @@ my $build = $class->new(
 
     build_requires     => { 'ExtUtils::CBuilder' => 0, },
     configure_requires => { 'Module::Build'      => 0.42 },
-    test_requires      => { 'Test::Differences'  => 0, 'Test::Exception' => 0, 'Test::Output' => 0, },
-    requires           => { 'perl'               => '5.008' },
+    test_requires      => { 'Test::More' => 0, 'Test::Differences'  => 0, 'Test::Exception' => 0, 'Test::Output' => 0, },
+    requires           => { 'perl' => '5.008', 'Template::Tiny' => 0 },
     recommends         => { 'Test::Fake::HTTPD'  => 0, },
     meta_merge         => {
         'resources' => {
